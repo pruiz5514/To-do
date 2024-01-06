@@ -1,0 +1,25 @@
+li{
+    list-style: none;
+    width: 380px;
+    height: 80px;
+    background-color: #eeeeee;
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.check{
+    position: absolute;
+    left: 22px;
+}
+
+.delete{
+    position: absolute;
+    right: 14px;
+    top: -11px;
+}
