@@ -4,22 +4,40 @@ li{
     height: 80px;
     background-color: #eeeeee;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 15px;
     font-size: 20px;
     justify-content: center;
     align-items: center;
     position: relative;
-    cursor: pointer;
 }
 
 .check{
     position: absolute;
-    left: 22px;
+    left: 14px;
+    color: gray;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.checkCompleted{
+    color: green;
+}
+
+.taskSpec-completed{
+    text-decoration: line-through;
 }
 
 .delete{
     position: absolute;
-    right: 14px;
-    top: -11px;
+    right: 2px;
+    top: -19px;
+    color: gray;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.delete:hover{
+    color: red;
 }

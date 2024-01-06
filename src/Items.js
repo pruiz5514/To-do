@@ -1,13 +1,15 @@
 import './Items.css'
+import { FaCheck } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 function Items (props){
     return(
         <li>
-        <span className="check">V</span>
+        <span className={`check ${props.completed && 'checkCompleted'}`} onClick={props.onComplete}><FaCheck/> </span>
 
-        <p>{props.text}</p>
+        <p className={`taskSpec ${props.completed && 'taskSpec-completed'}`}>{props.text}</p>
 
-        <span className="delete">X</span>
+        <span className={`delete ${props.completed && 'delete-completed'}`} onClick={props.onDelete}> <IoClose/> </span>
     </li>
     )
 

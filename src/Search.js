@@ -1,8 +1,11 @@
+import React from 'react';
 import './Search.css'
-function Search (){
+function Search ({searchValue,setSearchValue}){
     return(
         <section className='searchContainer'>
-            <input placeholder='Buscar tarea'/>
+            <input placeholder='Buscar tarea' 
+                value={searchValue}
+                onChange={(event)=>(setSearchValue(event.target.value))}/>
         </section>
     )
 }
