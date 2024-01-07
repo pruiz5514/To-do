@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
-import { Header } from './Header';
-import { Search } from './Search';
-import { Counter } from './Counter';
-import { List } from './List';
-import { Items } from './Items';
-import { AddButton } from './AddButton';
+import { Header } from './Header/Header';
+import { Search } from './Search/Search';
+import { Counter } from './Counter/Counter';
+import { List } from './List/List';
+import { Items } from './Items/Items';
+import { AddButton } from './AddButton/AddButton';
+
 
 
 
